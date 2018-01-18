@@ -66,6 +66,13 @@
 			remoteGlobalIDString = 25DBCF371C30BF2B00D63A58;
 			remoteInfo = "ReSwift-watchOS";
 		};
+		E25F52062010F6660010A24E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 254133691C50B429003C8E93 /* ReSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3F13C0E81E7B3E4000D8442C;
+			remoteInfo = SwiftLintIntegration;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +109,7 @@
 				2541337C1C50B429003C8E93 /* ReSwift.framework */,
 				2541337E1C50B429003C8E93 /* ReSwift-tvOSTests.xctest */,
 				254133801C50B429003C8E93 /* ReSwift.framework */,
+				E25F52072010F6660010A24E /* SwiftLintIntegration.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -273,6 +281,13 @@
 			remoteRef = 2541337F1C50B429003C8E93 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		E25F52072010F6660010A24E /* SwiftLintIntegration.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftLintIntegration.xctest;
+			remoteRef = E25F52062010F6660010A24E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -398,6 +413,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ReSwiftRecorder/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -418,6 +437,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ReSwiftRecorder/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
